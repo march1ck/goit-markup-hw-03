@@ -242,7 +242,7 @@ ol {
 .logo-footer {
   color: var(--hero-logo-text);
 }
-.basement{
+.basement-item:not(:last-child){
   margin-bottom: 9px;
 }
 .location {
@@ -296,6 +296,10 @@ ol {
   align-content: stretch;
   gap: 30px;
 }
+.type{
+  padding:20px 24px;
+  border-bottom: 1px solid var(--portfolio-border);
+}
 
 .section-icon .icon-title {
   color: var(--secondary-color-text);
@@ -304,7 +308,7 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.section-icon > .icon-text {
+.section-icon .icon-text {
   color: var(--primary-color-text);
   font-size: 16px;
   line-height: 1.9;
