@@ -172,14 +172,14 @@ ol {
   column-gap: 30px;
 }
 
-.benefits-section .benefits-title {
+.benefits .benefits-title {
   color: var(--secondary-color-text);
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.benefits-section .benefits-text {
+.benefits .benefits-text {
   font-size: 14px;
   line-height: 1.7;
   width: 270px;
@@ -256,7 +256,6 @@ ol {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  
 }
 /* /Basement */
 
@@ -293,7 +292,7 @@ ol {
 }
 .items{
   display: flex;
-   flex-wrap: wrap; 
+  flex-wrap: wrap; 
   align-content: stretch;
   gap: 30px;
 }
