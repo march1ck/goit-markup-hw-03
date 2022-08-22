@@ -205,7 +205,7 @@ ol {
 }
 .icon-example {
   display: block;
-  max-width: 100;
+  max-width: 100%;
 }
 /* /Works */
 
@@ -305,11 +305,11 @@ ol {
 .items {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   }
-
-.goods {
-  flex-basis: calc((100% - 30px) / 3);
-}
+  .goods{
+    flex-basis: calc((100% - 60px) / 3);
+  }
 
 .type {
   padding: 20px 24px;
