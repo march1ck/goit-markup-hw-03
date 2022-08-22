@@ -305,12 +305,11 @@ ol {
 .items {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   }
 
-/* .goods {
+.goods {
   flex-basis: calc((100% - 30px) / 3);
-} */
+}
 
 .type {
   padding: 20px 24px;
