@@ -302,15 +302,16 @@ ol {
   background-color: var(--accent-color);
   color: var(--hero-logo-text);
 }
-.items{
+.items {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-.goods {
-  flex-basis: calc((100% - 60px) / 3);
-  
-}
+  }
+
+/* .goods {
+  flex-basis: calc((100% - 30px) / 3);
+} */
+
 .type {
   padding: 20px 24px;
   border-bottom: 1px solid var(--border);
