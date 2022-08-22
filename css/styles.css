@@ -7,8 +7,7 @@
   --secondary-back-color: #2f303a;
   --team-btn-back-color: #f5f4fa;
   --hidden-btn-hero-color: #188ce8;
-  --portfolio-border:#ECECEC;
-
+  --border: #ececec;
 }
 body {
   background-color: #ffffff;
@@ -43,7 +42,7 @@ ol {
   padding-left: 15px;
   padding-right: 15px;
 }
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -140,7 +139,9 @@ ol {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  width: 232px;
+  min-width: 232px;
+  padding: 10px 32px;
+  border: 0;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -167,7 +168,7 @@ ol {
   margin: -1px;
 }
 
-.benefits{
+.benefits {
   display: flex;
   column-gap: 30px;
 }
@@ -187,6 +188,9 @@ ol {
 /* /Benefits */
 
 /* Works */
+.section.about {
+  padding-top: 0px;
+}
 .title {
   color: var(--secondary-color-text);
   font-weight: 700;
@@ -195,22 +199,31 @@ ol {
   margin-bottom: 50px;
   text-align: center;
 }
-.examples{
+.examples {
   display: flex;
   column-gap: 30px;
-  margin-bottom: 94px;
+}
+.icon-example {
+  display: block;
+  max-width: 100;
 }
 /* /Works */
 
 /* Team */
 
-.team-section   {
+.team-section {
   background-color: var(--team-btn-back-color);
-  
 }
-.workers{
+.worker {
+  background-color: var(--hero-logo-text);
+}
+.workers {
   display: flex;
   column-gap: 30px;
+}
+.names-position {
+  display: inline;
+  padding: 30px 70px;
 }
 .team-section .names {
   color: var(--secondary-color-text);
@@ -218,31 +231,30 @@ ol {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-section .position {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 30px;
 }
 /* /Team */
 
-/* Basement */
-.basement {
+/* footer */
+.footer {
   background-color: var(--secondary-back-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.basement .logo{
-  display: block;
-  margin-bottom:30px;
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 0;
 }
 .logo-footer {
   color: var(--hero-logo-text);
 }
-.basement-item:not(:last-child){
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .location {
@@ -257,19 +269,19 @@ ol {
   font-size: 14px;
   line-height: 1.7;
 }
-/* /Basement */
+/* /footer */
 
 /* portfolio-section */
 
-.border-head{
-  border: 1px solid var(--portfolio-border);
+.border-head {
+  border: 1px solid var(--border);
 }
 
 .button {
   display: flex;
   column-gap: 8px;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .portfolio-btn {
   color: var(--secondary-color-text);
@@ -292,15 +304,19 @@ ol {
 }
 .items{
   display: flex;
-  flex-wrap: wrap; 
-  align-content: stretch;
+  flex-wrap: wrap;
   gap: 30px;
 }
-.type{
-  padding:20px 24px;
-  border-bottom: 1px solid var(--portfolio-border);
+.goods {
+  flex-basis: calc((100% - 60px) / 3);
+  
 }
-
+.type {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
 .section-icon .icon-title {
   color: var(--secondary-color-text);
   font-weight: 700;
